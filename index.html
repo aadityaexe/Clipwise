@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pop Rock Crystal Shop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="bg-gradient-to-br from-blue-300 to-pink-300 min-h-screen text-white overflow-x-hidden hero">
+    <div class="w-full h-auto">
+      <svg class="heroSvg w-full h-auto" viewBox="0 0 1440 604" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M760 435.452C544.368 463.007 234.943 374.829 0 498.829V604H1440V0.5C1440 0.5 1296.64 13.2995 1171 90.5C1025.94 179.629 975.632 407.896 760 435.452Z"
+          fill="white" />
+      </svg>
+    </div>
+
+  </div>
+  <!-- Navbar -->
+  <header class="p-5">
+    <nav class="flex justify-between items-center">
+      <div class="text-xl font-bold ">Pop Rock Crystal</div>
+      <div class="flex justify-between items-center gap-44">
+        <ul class="flex space-x-5 gap-6">
+          <li><a href="#" class="text-white">Home</a></li>
+          <li><a href="#" class="text-white">Shop</a></li>
+          <li><a href="#" class="text-white">About Us</a></li>
+          <li><a href="#" class="text-white">Help</a></li>
+        </ul>
+        <div class="flex">
+          <span class="bg-red-500 h-5 w-5 rounded-full mt-1 text-center overflow-hidden">60</span>
+          <a href="#" class="text-2xl mr-4">🛒</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="flex justify-between items-center p-12 h-screen">
+    <div>
+      <h1 class="text-5xl">Welcome to <br> Pop Rock Crystal Shop!</h1>
+      <p class="mt-6 text-lg">Find unique phone accessories, crystals, jewelry, and more. Free shipping inside the U.S.
+      </p>
+      <div class="flex gap-7">
+        <a href="#" class="inline-block mt-6 bg-white text-gray-900 px-5 py-2 rounded-md font-bold border-2 ">Shop
+          Now</a>
+        <a href="#" class="inline-block mt-8  text-blue-900 font-bold">about us</a>
+      </div>
+    </div>
+
+    <div class="flex flex-col">
+      <div class="bg-white text-gray-900 p-5 rounded-lg text-center relative">
+        <span class="bg-purple-600 text-white px-3 py-1 absolute top-7 left-0 rounded-r-lg">New
+          lot</span>
+        <img src="./assets/aditya.png" alt="Crystal Agate Phone Grip" class="w-72 mt-4">
+        <p class="font-bold mt-4">CRYSTAL AGATE PHONE GRIP - <span class="text-red-600">$18.99</span></p>
+        <!-- Carousel -->
+      </div>
+      <div class="flex items-center justify-center mt-5 space-x-3">
+        <button class="bg-purple-600 text-white px-3 py-1 rounded">←</button>
+        <span class="text-lg" id="dots">⚪ ⚪ ⚪ ⚪ ⚪</span>
+        <button class="bg-purple-600 text-white px-3 py-1 rounded">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="bg-gray-100 text-gray-900 py-12">
+    <div class="max-w-6xl mx-auto text-center">
+      <h1 class="text-4xl mb-8">All Products</h1>
+      <div class="flex justify-start space-x-4 mb-8">
+        <div>
+          <label for="filter" class="text-blue-400 mr-2">Filter:</label>
+          <select id="filter"
+            class="text-blue-900 font-semibold border-2 hover:border-yellow-400 rounded-md px-2 py-1 bg-transparent focus:outline-none">
+            <option class="text-blue-900">All Products</option>
+            <option class="text-blue-900">Category 1</option>
+            <option class="text-blue-900">Category 2</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="sort" class="text-blue-400 mr-2">Sort:</label>
+          <select id="sort"
+            class="text-blue-900 font-semibold border-2 hover:border-yellow-400 rounded-md px-2 py-1 bg-transparent focus:outline-none">
+            <option class="text-blue-900">Best Selling</option>
+            <option class="text-blue-900">Newest</option>
+            <option class="text-blue-900">Price Low to High</option>
+            <option class="text-blue-900">Price High to Low</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <!-- Product Cards -->
+        <div class="bg-white p-5 rounded-lg shadow hover:transform hover:-translate-y-2 transition">
+          <img src="./assets/aditya.png" alt="Crystal Agate Phone Grip" class="w-full h-48 object-cover rounded-lg">
+          <h2 class="text-xl font-semibold mt-4">CRYSTAL AGATE PHONE GRIP</h2>
+          <p class="text-lg text-gray-700 mt-2">$18.99</p>
+          <button
+            class="mt-4 px-4 py-2 rounded-full border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white">Buy
+            Now</button>
+        </div>
+        <!-- Repeat this block for other products -->
+        <div class="bg-white p-5 rounded-lg shadow hover:transform hover:-translate-y-2 transition">
+          <img src="./assets/aditya.png" alt="Crystal Agate Phone Grip" class="w-full h-48 object-cover rounded-lg">
+          <h2 class="text-xl font-semibold mt-4">CRYSTAL AGATE PHONE GRIP</h2>
+          <p class="text-lg text-gray-700 mt-2">$18.99</p>
+          <button
+            class=" mt-4 px-4 py-2 rounded-full border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white">Buy
+            Now</button>
+        </div>
+        <div class="bg-white p-5 rounded-lg shadow hover:transform hover:-translate-y-2 transition">
+          <img src="./assets/aditya.png" alt="Crystal Agate Phone Grip" class="w-full h-48 object-cover rounded-lg">
+          <h2 class="text-xl font-semibold mt-4">CRYSTAL AGATE PHONE GRIP</h2>
+          <p class="text-lg text-gray-700 mt-2">$18.99</p>
+          <button
+            class=" mt-4 px-4 py-2 rounded-full border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white">Buy
+            Now</button>
+        </div>
+        <div class="bg-white p-5 rounded-lg shadow hover:transform hover:-translate-y-2 transition">
+          <img src="./assets/aditya.png" alt="Crystal Agate Phone Grip" class="w-full h-48 object-cover rounded-lg">
+          <h2 class="text-xl font-semibold mt-4">CRYSTAL AGATE PHONE GRIP</h2>
+          <p class="text-lg text-gray-700 mt-2">$18.99</p>
+          <button
+            class=" mt-4 px-4 py-2 rounded-full border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white">Buy
+            Now</button>
+        </div>
+        <div class="bg-white p-5 rounded-lg shadow hover:transform hover:-translate-y-2 transition">
+          <img src="./assets/aditya.png" alt="Crystal Agate Phone Grip" class="w-full h-48 object-cover rounded-lg">
+          <h2 class="text-xl font-semibold mt-4">CRYSTAL AGATE PHONE GRIP</h2>
+          <p class="text-lg text-gray-700 mt-2">$18.99</p>
+          <button
+            class="mt-4 px-4 py-2 rounded-full border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white">Buy
+            Now</button>
+        </div>
+        <div class="bg-white p-5 rounded-lg shadow hover:transform hover:-translate-y-2 transition">
+          <img src="./assets/aditya.png" alt="Crystal Agate Phone Grip" class="w-full h-48 object-cover rounded-lg">
+          <h2 class="text-xl font-semibold mt-4">CRYSTAL AGATE PHONE GRIP</h2>
+          <p class="text-lg text-gray-700 mt-2">$18.99</p>
+          <button
+            class="mt-4 px-4 py-2 rounded-full border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white">Buy
+            Now</button>
+        </div>
+        <div class="bg-white p-5 rounded-lg shadow hover:transform hover:-translate-y-2 transition">
+          <img src="./assets/aditya.png" alt="Crystal Agate Phone Grip" class="w-full h-48 object-cover rounded-lg">
+          <h2 class="text-xl font-semibold mt-4">CRYSTAL AGATE PHONE GRIP</h2>
+          <p class="text-lg text-gray-700 mt-2">$18.99</p>
+          <button
+            class=" mt-4 px-4 py-2 rounded-full border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white">Buy
+            Now</button>
+        </div>
+        <div class="bg-white p-5 rounded-lg shadow hover:transform hover:-translate-y-2 transition">
+          <img src="./assets/aditya.png" alt="Crystal Agate Phone Grip" class="w-full h-48 object-cover rounded-lg">
+          <h2 class="text-xl font-semibold mt-4">CRYSTAL AGATE PHONE GRIP</h2>
+          <p class="text-lg text-gray-700 mt-2">$18.99</p>
+          <button
+            class=" mt-4 px-4 py-2 rounded-full border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white">Buy
+            Now</button>
+        </div>
+      </div>
+
+      <div class="mt-8">
+        <button
+          class="bg-transparent border-2 border-blue-500 text-blue-500 px-6 py-2 rounded-full hover:bg-blue-500 hover:text-white transition">View
+          All</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offer Section -->
+  <section class="of">
+    <div class=" flex flex-col p-12 md:flex-row justify-evenly items-center">
+      <div class="m ax-w-sm p-5">
+        <h2 class="text-purple-500 text-lg text-right">BEST PRICE</h2>
+        <h1 class="text-4xl text-right font-bold mt-2">Agate Phone Grip</h1>
+        <div class="flex justify-end items-baseline mt-4 space-x-2">
+          <span class="text-gray-400 line-through">$44.50</span>
+          <span class="text-orange-600 text-4xl">$19.50</span>
+        </div>
+        <p class="text-gray-600 mt-4 text-right">These Pop Rock Crystal grip tops can be swapped with other tops
+          depending on your mood, outfit, nails, phone case, holiday, etc.!</p>
+        <div class="relative">
+          <button class="bg-purple-600 text-white absolute right-0 px-6 py-2 mt-6 rounded-full">BUY NOW</button>
+        </div>
+      </div>
+
+      <div class="mt-8 md:mt-0 md:ml-12 relative">
+
+
+        <div class="w-64 h-64 bg-gray-200 rounded-full flex items-center justify-center shadow-xl">
+
+          <div class="w-52 h-52 bg-gray-100 rounded-full flex items-center justify-center shadow-lg">
+
+            <div class="w-40 h-40 bg-white rounded-full flex items-center justify-center shadow-inner overflow-hidden">
+              <img src="./assets/aditya.png" alt="Agate Phone Grip" class="w-full h-full object-cover">
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="bg-gradient-to-br from-blue-300 to-pink-300 min-h-screen text-white overflow-x-hidden  absolute fot">
+        <svg viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg" class="w-full ">
+          <path
+            d="M780.5 719.289C996.132 691.392 1205.06 380.14 1440 254.604V-6.10352e-05H0V900C0 900 124.358 896.153 250 817.997C395.056 727.764 564.868 747.186 780.5 719.289Z"
+            fill="white" />
+        </svg>
+
+      </div>
+    </div>
+  </section>
+  <div class="h-40 w-full foot">
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
